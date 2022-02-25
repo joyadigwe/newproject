@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var countDownTimer;
+        var timerInterval;
+        var arrayOfQuestions = [];
+        const maxTime = 5 * 60; //time is in seconds
+        function setCountDownTimer() {
+            countDownTimer = maxTime;
+        }
+        //when the person clicks the begin button the timer starts
+        //start timer
+        timerInterval = setInterval(updateTimer, 1000);
+
+        function updateTimer() {
+            countDownTimer = countDownTimer - 1;
+        }
+
+        //question is asked
+        function SetupQuestions() {
+            let question1 = {
+                id: "quest0",
+                question: ""
+            }
+        }
+        //if question is correct next question
+        
+        //if question is incorrect time penalty
+        //if answer is correct show points and then go to the next question
+    </script>
+</head>
+<body>
+    <div class="welcome">
+        <span style="text-align:left">Time Remaining:</span>
+        <span style="text-align:right">Score:</span>
+    </div>
+
+    <div id="questions">
+        <div>Question: </div>
+        <div id ="answer1">A1:</div>
+        <div id="answer2">A2:</div>
+        <div id="answer3">A3:</div>
+        <div id="answer4">A4:</div>
+    </div>
+
+</body>
+</html>
