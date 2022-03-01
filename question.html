@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question Page</title>
     <link rel="stylesheet" href="style.css">
-    <script>
+    <script src="index.js" defer></script>
+    <!--<script>
         var countDownTimer;
         var timerInterval;
         var arrayOfQuestions = [];
@@ -19,7 +20,7 @@
         let timerInterval = setInterval(updateTimer, 1000);
 
         function updateTimer() {
-            countDownTimer = countDownTimer - 1;
+            countDownTimer--;
         }
 
         //question is asked
@@ -60,6 +61,7 @@
         function showQuestion(questionindex) {
             let question1 = document.getElementId('question1');
             let newQuestion = document.createElement('div');
+            newQuestion.id = arrayOfQuestions
             newQuestion.id = arrayOfQuestions(questionindex).id;
         }
         
@@ -71,8 +73,9 @@
         
         //if question is incorrect time penalty
         //if answer is correct show points and then go to the next question
-    </script>
+    </script>-->
 </head>
+
 <body>
     <div class="welcome">
         <span style="text-align:left">Time Remaining:</span>
@@ -82,7 +85,7 @@
 
 <div>
     <div id="questions">
-        <div>Question: </div>
+        <!-- <div>Question: </div>
 
         <div id ="a">A1:</div>
 
@@ -90,7 +93,7 @@
 
         <div id="c">A3:</div>
 
-        <div id="d">A4:</div>
+        <div id="d">A4:</div>-->
     </div>
 </div>
 
